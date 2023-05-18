@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const Alert = ({ alert, removeAlert }) => {
+const Alert = ({ alert, removeAlert, list }) => {
   const { type, msg } = alert;
   useEffect(() => {
     const timeOut = setTimeout(() => {
@@ -8,7 +8,7 @@ const Alert = ({ alert, removeAlert }) => {
     }, 3000);
 
     return () => clearTimeout(timeOut);
-  }, []);
+  }, [list]);
   return (
     <div
       className={`text-center mb-[2rem] bg-${type}-300 rounded-md text-${type}-700 py-[0.3rem] text-[1.2rem]`}
