@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/grocerybud/static/css/main.e38c328e.css",
+    "main.js": "/grocerybud/static/js/main.aa42f282.js",
+    "static/js/787.829fa68b.chunk.js": "/grocerybud/static/js/787.829fa68b.chunk.js",
+    "index.html": "/grocerybud/index.html",
+    "main.e38c328e.css.map": "/grocerybud/static/css/main.e38c328e.css.map",
+    "main.aa42f282.js.map": "/grocerybud/static/js/main.aa42f282.js.map",
+    "787.829fa68b.chunk.js.map": "/grocerybud/static/js/787.829fa68b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e38c328e.css",
+    "static/js/main.aa42f282.js"
+  ]
+}
