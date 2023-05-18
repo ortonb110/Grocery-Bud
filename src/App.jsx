@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import List from "./Components/List";
 import Alert from "./Components/Alert";
 
@@ -18,15 +18,26 @@ function App() {
     e.preventDefault();
     if (!name) {
       //display alert
+      showAlert(true, 'red', 'please enter value')
     } else if (name && editing) {
       //display alert and deal with edit
     } else {
       // show alert
       const newItem = { id: new Date().getTime().toString(), title: name };
       setList([...list, newItem]);
-      setName('')
+      showAlert(true, 'green', 'item added')
+      setName("");
     }
   };
+
+  const showAlert = (show = false, type = "", msg = "") => {
+    setAlert({
+      show,
+      type,
+      msg,
+    });
+  };
+
 
   return (
     <main className="bg-white py-[2rem] px-[1.5rem] rounded-md shadow-lg">
@@ -35,6 +46,7 @@ function App() {
           grocery bud
         </h1>
         <form className="mb-[2rem]" onSubmit={submitHandler}>
+          {alert.show && <Alert alert={alert} removeAlert={showAlert}/>}
           <input
             value={name}
             onChange={(e) => {
@@ -46,7 +58,6 @@ function App() {
           />
           <button
             type="submit"
-            
             className="uppercase bg-blue-400 text-white px-[1rem] py-[0.3rem] rounded-r-md hover:bg-blue-500 transition-all ease-in-out duration-200"
           >
             {editing ? "editing" : "submit"}
