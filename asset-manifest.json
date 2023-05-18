@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/grocerybud/static/css/main.e38c328e.css",
-    "main.js": "/grocerybud/static/js/main.aa42f282.js",
-    "static/js/787.829fa68b.chunk.js": "/grocerybud/static/js/787.829fa68b.chunk.js",
-    "index.html": "/grocerybud/index.html",
-    "main.e38c328e.css.map": "/grocerybud/static/css/main.e38c328e.css.map",
-    "main.aa42f282.js.map": "/grocerybud/static/js/main.aa42f282.js.map",
-    "787.829fa68b.chunk.js.map": "/grocerybud/static/js/787.829fa68b.chunk.js.map"
+    "main.css": "/Grocery-Bud/static/css/main.e38c328e.css",
+    "main.js": "/Grocery-Bud/static/js/main.b6283180.js",
+    "static/js/787.829fa68b.chunk.js": "/Grocery-Bud/static/js/787.829fa68b.chunk.js",
+    "index.html": "/Grocery-Bud/index.html",
+    "main.e38c328e.css.map": "/Grocery-Bud/static/css/main.e38c328e.css.map",
+    "main.b6283180.js.map": "/Grocery-Bud/static/js/main.b6283180.js.map",
+    "787.829fa68b.chunk.js.map": "/Grocery-Bud/static/js/787.829fa68b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e38c328e.css",
-    "static/js/main.aa42f282.js"
+    "static/js/main.b6283180.js"
   ]
 }
